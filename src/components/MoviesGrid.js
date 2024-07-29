@@ -39,7 +39,7 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
         return movie.rating >= 8;
 
       case "Ok":
-        return movie.rating >= 5 && movie < 8;
+        return movie.rating >= 5 && movie.rating < 8;
 
       case "Bad":
         return movie.rating < 5;
